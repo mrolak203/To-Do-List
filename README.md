@@ -1,2 +1,2 @@
 # ToDo
-Interactive To Do List that saves input until a user deletes it
+Interactive To Do List that allows a user to add, check off, and delete tasks 
