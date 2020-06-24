@@ -1,0 +1,302 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:500&display=swap");
+
+
+
+:root {
+  --max-width: 1200px;
+  --fixed-width: 600px;
+}
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: "Lato", sans-serif;
+  background: #f2f2eb;
+  color: #eff0e6;
+  line-height: 1.4;
+  font-size: 0.70rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.870rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: #7d8282;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+
+  text-transform: uppercase;
+  background: transparent;
+  color: #222;
+  padding: 0.370rem 0.70rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all 1s ;
+  font-size: 0.870rem;
+  cursor: pointer;
+
+}
+.btn:hover {
+  color: #FFFFFF;
+  background: #222;
+}
+
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+}
+@media screen and (min-width: 990px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.section-center {
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 1s ;
+  padding: 2rem;
+}
+.section-center:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.todo-form h3 {
+  color: #525756;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+#todo {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: #f7f7f5;
+
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: transparent;
+
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: #7d8282;
+}
+
+#todo::placeholder {
+  font-family: var(--ff-secondary);
+  color: #7d8282;
+}
+
+.todo-form, #todo:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+.submit-btn {
+  background: hsl(138, 86%, 81%);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  content: #5abf72;
+  transition: all 1s ;
+  font-size: 0.85rem;
+}
+.submit-btn:hover {
+  background:#5abf72;
+  color: white;
+}
+
+.submit-btn:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+.todo-container {
+  margin-top: 2rem;
+  transition: all 1s ;
+  visibility: hidden;
+  
+}
+.show-container {
+  visibility: visible;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: all 1s ;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  
+}
+.todo-item:hover {
+  color: #7d8282;
+  background: #f7f7f5;
+}
+.todo-item:hover .title {
+  color: #7d8282;
+}
+.title {
+  margin-bottom: 0;
+  /* */
+  color: #5c5c59;
+  letter-spacing: 2px;
+  transition: all 1s ;
+}
+.check-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin: 0 0.15rem;
+  transition: all 1s ;
+}
+.check-btn {
+  color: hsl(125, 70%, 65%);
+}
+.check-btn:hover {
+  color: hsl(125, 68%, 45%);
+}
+
+.check-btn:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+.delete-btn {
+  color: hsl(360, 70%, 65%);
+}
+.delete-btn:hover {
+  color:  hsl(360, 68%, 45%);
+}
+
+.delete-btn:focus {
+  outline:none;
+  box-shadow: none;
+}
+
+.clear-btn {
+
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+
+  border-color: transparent;
+
+  color: hsl(360, 70%, 65%);
+  margin: 0 auto;
+  font-size: 0.88rem;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  transition: all 1s ;
+  margin-top: 1.20rem;
+}
+.clear-btn:hover {
+  color:  hsl(360, 68%, 45%);;
+}
+
+.clear-btn:focus {
+  outline:none;
+  box-shadow: none;
+}

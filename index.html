@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2do</title>
+    <!-- link icons -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <!-- top pannel form -->
+      <form class="todo-form">
+        <p class="alert"></p>
+        <h3>ToDo list</h3>
+        <div class="form-control">
+          <input type="text" id="todo" placeholder="e.g. clean room" />
+          <button type="submit" class="submit-btn">submit</button>
+          
+        </div>
+      </form>
+
+      <!-- list body -->
+      <div class="todo-container">
+        <div class="todo-list"></div>
+        <article class= "todo-item">
+
+<!--
+          <p class ="title">item</p>
+          <div class="btn-container">
+
+            
+            <button type="button" class = "check-btn">
+              <i class="fa fa-check" ></i>
+            </button>
+
+          
+            <button type="button" class = "delete-btn">
+             <i class="fa fa-times" ></i>
+            </button>
+          </div>
+-->
+        </article>
+
+        <!-- clear entire list button --> 
+        <button type="button" class="clear-btn"> clear list</button>
+
+
+       
+      </div>
+    </section>
+
+
+    <!-- javascript -->
+    <script src="list.js"></script>
+  </body>
+</html>
